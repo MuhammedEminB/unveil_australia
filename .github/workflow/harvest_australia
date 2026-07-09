@@ -1,1 +1,70 @@
+name: Unveil - Avustralya Hasat
+
+on:
+  workflow_dispatch:
+    inputs:
+      region:
+        description: "regions.json icindeki bolge anahtari (orn. greater_brisbane)"
+        required: true
+        default: "greater_brisbane"
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repoyu al
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Ham hasat calistir (Overpass)
+        run: |
+          python3 unveil_harvest.py \
+            --region "${{ github.event.inputs.region }}" \
+            --regions-file regions.json \
+            --out raw_${{ github.event.inputs.region }}.json
+
+      - name: Sinir kirpma + tekillestirme
+        run: |
+          mkdir -p packs
+          BOUNDARY_FILE=$(python3 -c "
+import json
+regions = json.load(open('regions.json'))
+r = regions['${{ github.event.inputs.region }}']
+print(r.get('boundary_file', ''))
+")
+          if [ -n "$BOUNDARY_FILE" ] && [ -f "$BOUNDARY_FILE" ]; then
+            python3 clip_region.py \
+              --raw raw_${{ github.event.inputs.region }}.json \
+              --boundary "$BOUNDARY_FILE" \
+              --out packs/${{ github.event.inputs.region }}.json
+          else
+            echo "Bu bolge icin gercek sinir dosyasi yok, ham veri direkt pakete cevriliyor (daire/bbox tabanli)."
+            python3 -c "
+import json
+raw = json.load(open('raw_${{ github.event.inputs.region }}.json'))
+pack = {'il': raw['region'], 'count': raw['raw_count'],
+        'd': [[it['name'], it['cat'], it['lat'], it['lon'], it.get('score',50)] for it in raw['items']]}
+json.dump(pack, open('packs/${{ github.event.inputs.region }}.json','w'), ensure_ascii=False)
+"
+          fi
+
+      - name: Sonucu artifact olarak yukle
+        uses: actions/upload-artifact@v4
+        with:
+          name: unveil-harvest-${{ github.event.inputs.region }}
+          path: |
+            raw_${{ github.event.inputs.region }}.json
+            packs/${{ github.event.inputs.region }}.json
+
+      - name: Sonucu repoya commit'le
+        run: |
+          git config user.name "unveil-bot"
+          git config user.email "unveil-bot@users.noreply.github.com"
+          git add packs/${{ github.event.inputs.region }}.json
+          git diff --staged --quiet || git commit -m "Hasat: ${{ github.event.inputs.region }}"
+          git push
 
