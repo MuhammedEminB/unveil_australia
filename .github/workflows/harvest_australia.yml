@@ -3,7 +3,7 @@ name: Unveil - Avustralya Hasat
 on:
   workflow_dispatch:
     inputs:
-      region:
+      region: "greater_brisbane"
         description: "regions.json icindeki bolge anahtari (orn. greater_brisbane)"
         required: true
         default: "greater_brisbane"
