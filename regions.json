@@ -1,0 +1,474 @@
+{
+  "greater_brisbane": {
+    "name": "Greater Brisbane",
+    "type": "boundary",
+    "boundary_file": "boundaries/greater_brisbane_boundary.geojson",
+    "bbox": {
+      "south": -28.36388,
+      "west": 152.07547,
+      "north": -26.45276,
+      "east": 153.54354
+    },
+    "area_sqkm": 15842.0073,
+    "source": "ABS ASGS 2021 GCCSA (3GBRI)"
+  },
+  "wollongong": {
+    "name": "Wollongong",
+    "type": "circle",
+    "state": "NSW",
+    "center": {
+      "lat": -34.4278,
+      "lng": 150.8931
+    },
+    "radius_km": 50,
+    "bbox": {
+      "south": -34.87825,
+      "north": -33.97735,
+      "west": 150.34699,
+      "east": 151.43921
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "byron_bay": {
+    "name": "Byron Bay",
+    "type": "circle",
+    "state": "NSW",
+    "center": {
+      "lat": -28.6474,
+      "lng": 153.602
+    },
+    "radius_km": 40,
+    "bbox": {
+      "south": -29.00776,
+      "north": -28.28704,
+      "west": 153.19137,
+      "east": 154.01263
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "coffs_harbour": {
+    "name": "Coffs Harbour",
+    "type": "circle",
+    "state": "NSW",
+    "center": {
+      "lat": -30.2963,
+      "lng": 153.1157
+    },
+    "radius_km": 45,
+    "bbox": {
+      "south": -30.70171,
+      "north": -29.89089,
+      "west": 152.64617,
+      "east": 153.58523
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "wagga_wagga": {
+    "name": "Wagga Wagga",
+    "type": "circle",
+    "state": "NSW",
+    "center": {
+      "lat": -35.1082,
+      "lng": 147.3598
+    },
+    "radius_km": 45,
+    "bbox": {
+      "south": -35.51361,
+      "north": -34.70279,
+      "west": 146.86424,
+      "east": 147.85536
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "albury": {
+    "name": "Albury",
+    "type": "circle",
+    "state": "NSW",
+    "center": {
+      "lat": -36.0737,
+      "lng": 146.9135
+    },
+    "radius_km": 45,
+    "bbox": {
+      "south": -36.47911,
+      "north": -35.66829,
+      "west": 146.41192,
+      "east": 147.41508
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "port_macquarie": {
+    "name": "Port Macquarie",
+    "type": "circle",
+    "state": "NSW",
+    "center": {
+      "lat": -31.4333,
+      "lng": 152.9098
+    },
+    "radius_km": 45,
+    "bbox": {
+      "south": -31.83871,
+      "north": -31.02789,
+      "west": 152.43467,
+      "east": 153.38493
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "katoomba": {
+    "name": "Katoomba",
+    "type": "circle",
+    "state": "NSW (Blue Mountains)",
+    "center": {
+      "lat": -33.7135,
+      "lng": 150.3116
+    },
+    "radius_km": 40,
+    "bbox": {
+      "south": -34.07386,
+      "north": -33.35314,
+      "west": 149.87838,
+      "east": 150.74482
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "geelong": {
+    "name": "Geelong",
+    "type": "circle",
+    "state": "VIC",
+    "center": {
+      "lat": -38.1499,
+      "lng": 144.3617
+    },
+    "radius_km": 50,
+    "bbox": {
+      "south": -38.60035,
+      "north": -37.69945,
+      "west": 143.7889,
+      "east": 144.9345
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "ballarat": {
+    "name": "Ballarat",
+    "type": "circle",
+    "state": "VIC",
+    "center": {
+      "lat": -37.5622,
+      "lng": 143.8503
+    },
+    "radius_km": 45,
+    "bbox": {
+      "south": -37.96761,
+      "north": -37.15679,
+      "west": 143.33887,
+      "east": 144.36173
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "bendigo": {
+    "name": "Bendigo",
+    "type": "circle",
+    "state": "VIC",
+    "center": {
+      "lat": -36.757,
+      "lng": 144.2794
+    },
+    "radius_km": 45,
+    "bbox": {
+      "south": -37.16241,
+      "north": -36.35159,
+      "west": 143.77339,
+      "east": 144.78541
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "torquay": {
+    "name": "Torquay",
+    "type": "circle",
+    "state": "VIC (Great Ocean Road)",
+    "center": {
+      "lat": -38.3333,
+      "lng": 144.3167
+    },
+    "radius_km": 45,
+    "bbox": {
+      "south": -38.73871,
+      "north": -37.92789,
+      "west": 143.79988,
+      "east": 144.83352
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "townsville": {
+    "name": "Townsville",
+    "type": "circle",
+    "state": "QLD",
+    "center": {
+      "lat": -19.259,
+      "lng": 146.8169
+    },
+    "radius_km": 50,
+    "bbox": {
+      "south": -19.70945,
+      "north": -18.80855,
+      "west": 146.33975,
+      "east": 147.29405
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "toowoomba": {
+    "name": "Toowoomba",
+    "type": "circle",
+    "state": "QLD",
+    "center": {
+      "lat": -27.5598,
+      "lng": 151.9507
+    },
+    "radius_km": 45,
+    "bbox": {
+      "south": -27.96521,
+      "north": -27.15439,
+      "west": 151.4934,
+      "east": 152.408
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "mackay": {
+    "name": "Mackay",
+    "type": "circle",
+    "state": "QLD",
+    "center": {
+      "lat": -21.155,
+      "lng": 149.1857
+    },
+    "radius_km": 45,
+    "bbox": {
+      "south": -21.56041,
+      "north": -20.74959,
+      "west": 148.751,
+      "east": 149.6204
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "rockhampton": {
+    "name": "Rockhampton",
+    "type": "circle",
+    "state": "QLD",
+    "center": {
+      "lat": -23.3791,
+      "lng": 150.51
+    },
+    "radius_km": 45,
+    "bbox": {
+      "south": -23.78451,
+      "north": -22.97369,
+      "west": 150.06833,
+      "east": 150.95167
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "airlie_beach": {
+    "name": "Airlie Beach",
+    "type": "circle",
+    "state": "QLD (Whitsundays)",
+    "center": {
+      "lat": -20.2708,
+      "lng": 148.7181
+    },
+    "radius_km": 40,
+    "bbox": {
+      "south": -20.63116,
+      "north": -19.91044,
+      "west": 148.33395,
+      "east": 149.10225
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "broome": {
+    "name": "Broome",
+    "type": "circle",
+    "state": "WA",
+    "center": {
+      "lat": -17.9614,
+      "lng": 122.2359
+    },
+    "radius_km": 50,
+    "bbox": {
+      "south": -18.41185,
+      "north": -17.51095,
+      "west": 121.76237,
+      "east": 122.70943
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "fremantle": {
+    "name": "Fremantle",
+    "type": "circle",
+    "state": "WA",
+    "center": {
+      "lat": -32.0569,
+      "lng": 115.7439
+    },
+    "radius_km": 30,
+    "bbox": {
+      "south": -32.32717,
+      "north": -31.78663,
+      "west": 115.42501,
+      "east": 116.06279
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "albany": {
+    "name": "Albany",
+    "type": "circle",
+    "state": "WA",
+    "center": {
+      "lat": -35.0269,
+      "lng": 117.8837
+    },
+    "radius_km": 45,
+    "bbox": {
+      "south": -35.43231,
+      "north": -34.62149,
+      "west": 117.38863,
+      "east": 118.37877
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "kalgoorlie": {
+    "name": "Kalgoorlie",
+    "type": "circle",
+    "state": "WA",
+    "center": {
+      "lat": -30.7489,
+      "lng": 121.4658
+    },
+    "radius_km": 45,
+    "bbox": {
+      "south": -31.15431,
+      "north": -30.34349,
+      "west": 120.99408,
+      "east": 121.93752
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "exmouth": {
+    "name": "Exmouth",
+    "type": "circle",
+    "state": "WA (Ningaloo Reef)",
+    "center": {
+      "lat": -21.9341,
+      "lng": 114.1281
+    },
+    "radius_km": 45,
+    "bbox": {
+      "south": -22.33951,
+      "north": -21.52869,
+      "west": 113.69106,
+      "east": 114.56514
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "mount_gambier": {
+    "name": "Mount Gambier",
+    "type": "circle",
+    "state": "SA",
+    "center": {
+      "lat": -37.8284,
+      "lng": 140.7828
+    },
+    "radius_km": 45,
+    "bbox": {
+      "south": -38.23381,
+      "north": -37.42299,
+      "west": 140.26953,
+      "east": 141.29607
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "port_augusta": {
+    "name": "Port Augusta",
+    "type": "circle",
+    "state": "SA",
+    "center": {
+      "lat": -32.4925,
+      "lng": 137.7654
+    },
+    "radius_km": 45,
+    "bbox": {
+      "south": -32.89791,
+      "north": -32.08709,
+      "west": 137.28476,
+      "east": 138.24604
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "nuriootpa": {
+    "name": "Nuriootpa",
+    "type": "circle",
+    "state": "SA (Barossa Valley)",
+    "center": {
+      "lat": -34.4696,
+      "lng": 138.9928
+    },
+    "radius_km": 40,
+    "bbox": {
+      "south": -34.82996,
+      "north": -34.10924,
+      "west": 138.5557,
+      "east": 139.4299
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "launceston": {
+    "name": "Launceston",
+    "type": "circle",
+    "state": "TAS",
+    "center": {
+      "lat": -41.4332,
+      "lng": 147.1441
+    },
+    "radius_km": 50,
+    "bbox": {
+      "south": -41.88365,
+      "north": -40.98275,
+      "west": 146.54328,
+      "east": 147.74492
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "devonport": {
+    "name": "Devonport",
+    "type": "circle",
+    "state": "TAS",
+    "center": {
+      "lat": -41.1789,
+      "lng": 146.3499
+    },
+    "radius_km": 40,
+    "bbox": {
+      "south": -41.53926,
+      "north": -40.81854,
+      "west": 145.87112,
+      "east": 146.82868
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  },
+  "katherine": {
+    "name": "Katherine",
+    "type": "circle",
+    "state": "NT (Kakadu kapısı)",
+    "center": {
+      "lat": -14.4652,
+      "lng": 132.2635
+    },
+    "radius_km": 45,
+    "bbox": {
+      "south": -14.87061,
+      "north": -14.05979,
+      "west": 131.84482,
+      "east": 132.68218
+    },
+    "source": "manuel tahmini merkez + yaricap (dogrulanmamis, gercek LGA/il sinirina gecince guncellenecek)"
+  }
+}
